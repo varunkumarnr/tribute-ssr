@@ -1,0 +1,173 @@
+body {
+    display: flex;
+    padding: 0;
+    --accent-font: "Bilbo", cursive;
+    --reg-font: "Montserrat", sans-serif;
+    --red-color: #9f0311;
+    --grey-color: #e9eaea;
+    font-family: var(--reg-font);
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: var(--grey-color);
+}
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+}
+.title{
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-family: var(--accent-font);
+    color: var(--red-color);
+}
+.header{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+.menu{
+    display: flex;
+    font-family: var(--reg-font);
+    justify-content: space-around;
+    cursor: pointer;
+}
+.menu>a{
+    margin: 20px;
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
+.menu>a:hover{
+    box-shadow: 0 1px var(--red-color);
+}
+.main-page{
+    background-image: url(images/tender-white-flowers-pink-background-rozovyi-fon-belye-tsvet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 88vh;
+}
+.main-container{
+    padding: 200px 0px 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.main-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: var(--accent-font);
+    font-size: 2rem;
+    letter-spacing: 0.4rem;
+}
+.button{
+    outline: none;
+    padding: 20px 70px;
+    margin-top: 50px;
+    border: 1px solid var(--red-color);
+    background-color: var(--red-color);
+    color: var(--grey-color);
+    border-radius: 0;
+}
+.main-container>a{
+    text-decoration: none;
+    list-style-type: none;
+}
+.bio {
+    display: flex;
+    height: 100vh;
+}
+.bio-image{
+    flex: 0.4;
+    background-image: url(images/sushant2.jpg);
+}
+.bio-text{
+    flex:0.6;  
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+     
+}
+.description {
+    text-align: center;
+    
+}
+.description >p{
+    line-height:2rem;
+}
+.bio-title{
+    color: var(--red-color) !important;
+    font-size: 2rem !important;  
+}
+.gallary{
+    display: flex;
+    
+}
+.gallay-title{
+    flex: 0.3;
+    color: var(--red-color) !important;
+    font-size: 2rem !important;  
+    padding : 30px ;
+}
+.row {
+    flex: 0.7;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+   
+    }
+
+    /* Create four equal columns that sits next to each other */
+    .column {
+      flex: 30%;
+      max-width: 30%;
+      padding: 0 4px;
+   
+    }
+
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+      justify-content: center;
+    }
+    @media screen and (max-width: 800px) {
+        .column {
+          flex: 50%;
+          max-width: 50%;
+          justify-content: center;
+        }
+      }
+
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column {
+          flex: 100%;
+          max-width: 100%;
+          justify-content: center;
+        }
+      }
+.contactme{
+     margin: 0 auto;
+     width: 100%;
+     max-width: 925px;
+     padding: 0 30px;
+     display: flex;
+     align-items: baseline;
+     align-content: center;
+     justify-content: space-around;
+     background-color: var(--red-color);
+}
+.footer-title{
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-family: var(--accent-font);
+    color: white;
+}
+
+.fab{
+  color: aliceblue;
+  font-size: 24px;
+}
